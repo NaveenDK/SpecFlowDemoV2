@@ -89,7 +89,11 @@ namespace SpecFlowDemo.StepDefinitions
             Console.WriteLine("Age:  " + age);
             Console.WriteLine("Phone:  " + Phone);
             Console.WriteLine("email:  " + email);
-          //  Console.WriteLine("Name:  " + name);
+            //  Console.WriteLine("Name:  " + name);
+
+            ScenarioContext.Current["InfoForNextStep"] = "Step 1 Passed";
+            Console.WriteLine(ScenarioContext.Current["InfoForNextStep"].ToString());
+
         }
 
 
