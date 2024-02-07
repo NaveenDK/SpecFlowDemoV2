@@ -111,3 +111,4 @@ C:\Users\naveen.kolambage\source\repos\SpecFlowDemo\SpecFlowDemo\obj\Debug\net6.
 C:\Users\naveen.kolambage\source\repos\SpecFlowDemo\SpecFlowDemo\obj\Debug\net6.0\SpecFlowDemo.pdb
 C:\Users\naveen.kolambage\source\repos\SpecFlowDemo\SpecFlowDemo\obj\Debug\net6.0\SpecFlowDemo.genruntimeconfig.cache
 C:\Users\naveen.kolambage\source\repos\SpecFlowDemo\SpecFlowDemo\obj\Debug\net6.0\ref\SpecFlowDemo.dll
+C:\Users\naveen.kolambage\source\repos\SpecFlowDemo\SpecFlowDemo\obj\Debug\net6.0\SpecFlowDemo.sourcelink.json

@@ -75,6 +75,25 @@ namespace SpecFlowDemo.StepDefinitions
             
             // throw new PendingStepException();
         }
+
+        //[When(@"I fill all the mandatatory fields in form Naveen,(.*) and (.*)")]
+        //public void WhenIFillAllTheMandatatoryFieldsInFormNaveenAnd(string name, int age, Int64 Phone, string email)
+        //{
+        //    //throw new PendingStepException();
+        //}
+
+        [When(@"I fill all the mandatatory fields in form (.*),(.*), (.*) and (.*)")]
+        public void WhenIFillAllTheMandatatoryFieldsInFormNaveenAndAndNaveen_KolambageDatacom_Com(string name, int age, Int64 Phone, string email)
+        {
+            Console.WriteLine("Name:  " + name);
+            Console.WriteLine("Age:  " + age);
+            Console.WriteLine("Phone:  " + Phone);
+            Console.WriteLine("email:  " + email);
+          //  Console.WriteLine("Name:  " + name);
+        }
+
+
+
     }
 }
 

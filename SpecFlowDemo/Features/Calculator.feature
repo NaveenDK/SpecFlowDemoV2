@@ -21,3 +21,16 @@ Scenario: Create a new employee with mandatary details
 	#And I click the save button
 	#Then I should see all the details saved in my application and DB
 
+Scenario Outline: Create a new employee with mandatary details outline
+	#And I click the save button
+	#Then I should see all the details saved in my application and DB
+	When I fill all the mandatatory fields in form <Name>,<Age>, <Phone> and <Email>
+	#And I click the save button
+	#Then I should see all the details saved in my application and DB
+Examples: 
+	| Name   | Age | Phone       | Email                        |
+	| Naveen | 29  | 02040807364 | naveen.kolambage@datacom.com |
+	| John | 19  | 13153334 | john@datacom.com |
+	| Sam | 39  |  87611233 | sam@datacom.com |
+ 
+

@@ -155,6 +155,37 @@ this.ScenarioInitialize(scenarioInfo);
             }
             this.ScenarioCleanup();
         }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Create a new employee with mandatary details outline")]
+        [NUnit.Framework.TestCaseAttribute("Naveen", "29", "02040807364", "naveen.kolambage@datacom.com", null)]
+        [NUnit.Framework.TestCaseAttribute("John", "19", "13153334", "john@datacom.com", null)]
+        [NUnit.Framework.TestCaseAttribute("Sam", "39", "87611233", "sam@datacom.com", null)]
+        public void CreateANewEmployeeWithMandataryDetailsOutline(string name, string age, string phone, string email, string[] exampleTags)
+        {
+            string[] tagsOfScenario = exampleTags;
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            argumentsOfScenario.Add("Name", name);
+            argumentsOfScenario.Add("Age", age);
+            argumentsOfScenario.Add("Phone", phone);
+            argumentsOfScenario.Add("Email", email);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create a new employee with mandatary details outline", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 24
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 27
+ testRunner.When(string.Format("I fill all the mandatatory fields in form {0},{1}, {2} and {3}", name, age, phone, email), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
     }
 }
 #pragma warning restore
